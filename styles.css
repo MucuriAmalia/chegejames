@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #040404; 
+    color: #171515; 
+}
+
+.header {
+    background-color: #33669c; 
+    color: #e7cb2c; 
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.navbar {
+    background-color: #071524; 
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #FFD700; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #c8400f; 
+    text-decoration: underline;
+}
+
+.section-title {
+    text-align: center;
+    margin: 30px 0 10px;
+    font-size: 2em;
+    color: #c50756; 
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.menu-list li {
+    background-color: #FFFFFF; 
+    border: 1px solid #FFD700; 
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu-list li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #d83c04; 
+}
+
+.reservation-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #0cc822; 
+    font-weight: bold;
+}
+
+.reservation-link:hover {
+    text-decoration: underline;
+    color: #FF4500; 
+}
+
+.rights-link {
+    color: aqua;
+    text-align: center;
+    display: block;
+}
