@@ -1,96 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Checkpoint Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mucuri Swahili Restaurant</title>
+  <link rel="icon" href="Mucuri Logo 1.png" type="image/x-icon">  <!-- Favicon -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><!-- Graffiti Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">  <!--css styles -->
 </head>
 <body>
-    <!-- Navbar Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section>
-        <h1>Welcome to My First Portfolio</h1>
-        <p>This is my first HTML checkpoint project where I will showcase my first skills and creativity.</p>
-    </section>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#" style="font-family: 'Patrick Hand', cursive; font-size: 2em;">
+      <img src="Mucuri Logo 2 .png" alt="Mucuri's Restaurant Logo" style="height: 50px;"> Mucuri Swahili Restaurant
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Me</h2>
-        <p>Here is a brief statement about myself. I am learning software development, and this is my project to demonstrate what I’ve learned so far.</p>
-        <!-- Embed video -->
-        <video controls width="400px">
-            <source src="Funny video for First HTML Project.mp4" type="video/mp4">
-        </video>
-        <!-- Embed audio -->
-        <audio controls>
-            <source src="Audio for First HTML Project.wav" type="audio/mpeg">
-        </audio>
-        <img>
-        <source src="Wedding Day.jpg"> 
-    </section>
+  <!-- Hero Section -->
+  <div id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Mucuri Swahili Restaurant</h1>
+      <p>Swahili Delicacies, An Unforgettable Experience!</p>
+      <a class="btn btn-lg" href="#menu">View Menu</a>
+    </div>
+  </div>
 
-    <!-- Work Section -->
-    <section>
-        <h2>My Work</h2>
-        <p>Below is a list of projects I have completed:</p>
-        <ul>
-            <li>Project 1: Building my first HTML checkpoint webpage.</li>
-            <li>Project 2: Creating a web application using HTML</li>
-            <li>Project 3: Designing a user-friendly interface</li>
-        </ul>
-    </section>
+  <!-- Menu Section -->
+  <div id="menu" class="container my-5">
+    <h2 class="text-center mb-4" style="font-family: 'Patrick Hand', cursive;">Our Menu</h2>
+    <div class="row">
+      <!-- First Menu Item -->
+      <div class="col-md-4">
+        <div class="card menu-item">
+          <img src="Ugali Beef.jpg" class="card-img-top" alt="Ugali na Nyama">
+          <div class="card-body">
+            <h5 class="card-title">Ugali na Nyama</h5>
+            <p class="card-text">A traditional dish made of maize flour served with beef stew. A hearty and filling meal.</p>
+            <p class="card-text"><strong>$8.00</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- Second Menu Item -->
+      <div class="col-md-4">
+        <div class="card menu-item">
+          <img src="Chicken Samosa.jpg" class="card-img-top" alt="Samosa">
+          <div class="card-body">
+            <h5 class="card-title">Samosa</h5>
+            <p class="card-text">Crispy pastries filled with spiced potatoes and peas. Perfect as a snack or appetizer.</p>
+            <p class="card-text"><strong>$5.00</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- Third Menu Item -->
+      <div class="col-md-4">
+        <div class="card menu-item">
+          <img src="Pilau Nazi.jpg" class="card-img-top" alt="Pilau">
+          <div class="card-body">
+            <h5 class="card-title">Pilau</h5>
+            <p class="card-text">Spiced rice dish cooked with marinated meat and a blend of aromatic spices.</p>
+            <p class="card-text"><strong>$10.00</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <!-- Fourth Menu Item -->
+        <div class="col-md-4">
+          <div class="card menu-item">
+            <img src="Kaimati.jpg" class="card-img-top" alt="Kaimati">
+            <div class="card-body">
+              <h5 class="card-title">Kaimati</h5>
+              <p class="card-text">Kaimati is a popular East African sweet snack made from deep-fried dough balls, soaked in a sugary syrup. Crisp on the outside, soft inside, and often flavored with cardamom.</p>
+              <p class="card-text"><strong>$5.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Fifth Menu Item -->
+        <div class="col-md-4">
+          <div class="card menu-item">
+            <img src="Viazi Karai.jpg" class="card-img-top" alt="Viazi Karai">
+            <div class="card-body">
+              <h5 class="card-title">Viazi Karai</h5>
+              <p class="card-text">Viazi karai is a Kenyan swahili snack made of boiled potato slices coated in a spiced gram flour batter, then deep-fried until golden. Often served with chili or coconut chutney.</p>
+              <p class="card-text"><strong>$5.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Sixth Menu Item -->
+        <div class="col-md-4">
+          <div class="card menu-item">
+            <img src="Samaki wa Kupakwa.jpg" class="card-img-top" alt="Samaki wa Kupakwa">
+            <div class="card-body">
+              <h5 class="card-title">Samaki wa Kupakwa</h5>
+              <p class="card-text">Samaki wa kupakwa is a Swahili dish of grilled fish slathered in a rich coconut-based sauce, flavored with spices like turmeric and garlic. It's typically served with rice or chapati.</p>
+              <p class="card-text"><strong>$10.00</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
 
-    <!-- Resume Section -->
-    <section>
-        <h2>Resume</h2>
-        <table border="1">
-            <tr>
-                <th>Education</th>
-                <th>Experience</th>
-            </tr>
-            <tr>
-                <td>Bachelor's in Statistics and Programming</td>
-                <td>Internship at KNBS </td>
-            </tr>
-            <tr>
-                <td>Certificate in Software Development</td>
-                <td>Freelance Software Developer</td>
-            </tr>
-        </table>
-    </section>
+  <!-- About Us Section -->
+  <div id="about" class="container my-5">
+    <h2 class="text-center" style="font-family: 'Patrick Hand', cursive;">About Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="About Mucuri Restaurant.jpg" class="img-fluid" alt="About Us">
+      </div>
+      <div class="col-md-6">
+        <p>At Mucuri Swahili Restaurant, we pride ourselves on offering the best traditional Swahili dishes with a modern twist. Our expert chefs carefully select ingredients to bring you the finest meals that leave a lasting impression.</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Contact Section with HTML Form -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- Contact Section -->
+  <div id="contact" class="container my-5">
+    <h2 class="text-center" style="font-family: 'Patrick Hand', cursive;">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <!-- Social Media Links -->
+    <div class="social-media mt-5 text-center">
+      <a href="https://www.facebook.com" class="mr-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.twitter.com" class="mr-3" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Mucuri Swahili Restaurant</p>
+    <p> Made by Mucuri</p>
+  </footer>
 
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; Mucuri Technologies 2024. All Rights Reserved.</p>
-    </footer>
+  <!-- Bootstrap and Font Awesome JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
