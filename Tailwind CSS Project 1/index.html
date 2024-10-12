@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aron Mucuri | Software Developer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="Warnabees Logo .png" type="image/x-icon">
+  
+  <!-- Tailwind CSS and Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+      font-family: 'Patrick Hand', sans-serif;
+      scroll-behavior: smooth; /* Smooth scroll effect */
+    }
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #FFD700;
+      padding: 10px 15px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    #backToTopBtn:hover {
+      background-color: #FFC107;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header Section -->
+  <header class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <img src="Warnabees Logo .png" alt="Logo" width="80"  class="h-50"> <!-- Logo -->
+      <h1 class="text-3xl font-bold">Warnabees Technologies</h1>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+          <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen" style="background-image: url('Heros Background image.jpg');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+      <div class="text-center text-white">
+        <h2 class="text-5xl font-extrabold mb-4">Hi, I'm Developer Aron Mucuri</h2>
+        <p class="text-xl mb-6"> <strong> A passionate software developer building impactful web applications.</strong></p>
+        <a href="#projects" class="bg-yellow-500 px-6 py-3 rounded-full text-black hover:bg-yellow-600">See My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">My Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-2">HTML & CSS</h3>
+          <p>HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are the foundational technologies for building and styling web pages, enabling the structuring of content and visual presentation.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-2">JavaScript</h3>
+          <p>JavaScript is a dynamic programming language that adds interactivity and functionality to websites, allowing for the creation of responsive and engaging user experiences.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-2">React.js</h3>
+          <p> React.js is a popular JavaScript library for building user interfaces, allowing developers to create reusable components and manage the state of applications efficiently.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-2">Node.js</h3>
+          <p>JavaScript runtime that enables server-side scripting, allowing you to build scalable and high-performance web applications by utilizing non-blocking, event-driven architecture.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-2">  Express.js</h3>
+          <p> Express.js is a minimal and flexible Node.js web application framework that provides robust features for building web and mobile applications, making it easier to create APIs and handle routing.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-2"> MongoDB</h3>
+          <p> MongoDB is a NoSQL database that uses a flexible document data model, allowing for high scalability and performance, making it ideal for applications requiring large volumes of data and real-time updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <img src="Project 1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold mb-2">Personal Portfolio Website</h3>
+          <p>Developed a responsive personal portfolio website showcasing skills, projects, and contact information. The site features a modern design with smooth scrolling, dynamic sections, and a contact form integrated with email services. It was built using HTML, CSS, and JavaScript, with Tailwind CSS for styling and layout.
+            Technologies Used: HTML, CSS, JavaScript, Tailwind CSS, EmailJS API.</p>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <img src="Project 2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold mb-2">Task Management Application</h3>
+          <p> Created a task management application that allows users to add, edit, and delete tasks. The application features user authentication, enabling users to create accounts and manage their tasks securely. The front end was developed with React, while the backend was built with Node.js and Express, using MongoDB for data storage.
+            Technologies Used: React.js, Node.js, Express, MongoDB.</p>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <img src="Project 3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold mb-2">E-commerce Store</h3>
+          <p>Designed and developed a fully functional e-commerce website where users can browse products, add them to their cart, and proceed to checkout. The project included features like user authentication, product filtering, and an admin dashboard for managing products. The site was developed using MERN stack (MongoDB, Express, React, Node.js).
+            Technologies Used: MongoDB, Express.Js, React, Node.js, Redux, Stripe API for payments.</p>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <img src="Project 4.jpg" alt="Project 4" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold mb-2"> Weather Forecasting App</h3>
+          <p>Built a weather forecasting application that fetches real-time weather data from a public API based on user location. The application provides current weather conditions, forecasts, and other relevant information. It was designed to be user-friendly and visually appealing, using CSS animations for better UX.
+            Technologies Used: HTML, CSS, JavaScript, OpenWeatherMap API, AJAX.</p>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <img src="Project 5.jpeg" alt="Project 5" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold mb-2"> Blog Platform</h3>
+          <p> Developed a blogging platform that allows users to create, edit, and delete blog posts, as well as comment on and like posts. The application features a rich text editor for writing posts and is designed with a responsive layout. User authentication is implemented to manage user sessions securely.
+            Technologies Used: React.js, Node.js, Express, MongoDB, Cloudinary for image uploads.</p>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <img src="Project 6.jpg" alt="Project 6" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold mb-2"> Fitness Tracker Application</h3>
+          <p> Created a fitness tracker application that enables users to log their workouts, track their progress, and set fitness goals. The application provides insights through visualizations of user data. It includes a mobile-responsive design to enhance accessibility on various devices.
+            Technologies Used: React Native, Firebase for real-time data storage, Chart.js for data visualization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Contact Me</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <div class="mb-6">
+          <label for="name" class="block text-sm font-bold mb-2">Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg" placeholder="Your name">
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-bold mb-2">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg" placeholder="Your email">
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-sm font-bold mb-2">Message</label>
+          <textarea id="message" class="w-full px-4 py-2 border rounded-lg" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">Connect with me:</p>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-yellow-500"><i class="fab fa-github"></i></a>
+      </div>
+      <p>© Warnabees Technologies 2024. </p>
+        <p> Developed by Aron Mucuri. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+<button id="backToTopBtn" onclick="scrollToTop()">
+  <i id="arrowIcon" class="fas fa-chevron-up text-white"></i>
+</button>
+
+<!-- Script for Back to Top Button -->
+<script>
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    const arrowIcon = document.getElementById("arrowIcon");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+      arrowIcon.classList.remove("fa-chevron-up");
+      arrowIcon.classList.add("fa-chevron-down");
+    } else {
+      btn.style.display = "none";
+      arrowIcon.classList.remove("fa-chevron-down");
+      arrowIcon.classList.add("fa-chevron-up");
+    }
+  };
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+</body>
+
+</html>
