@@ -11,7 +11,7 @@ function insertionSort(arr) {
     }
     return arr;
 }
-// Test
+// Example
 let arr = [15, 7, 20, 9, 4];
 console.log("Original array:", arr);
 
