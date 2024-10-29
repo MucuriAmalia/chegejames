@@ -1,215 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mucuri Tours and Transfers Agency</title>
-  <link rel="icon" href="Mucuri Favicon.png" type="image/x-icon"> <!-- Favicon -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> <!-- Graffiti Font -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Beauty</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">
-      <img src="Mucuri Travel Agency Logo.png" alt="Mucuri Tours Logo" style="height: 50px;"> Mucuri Tours and Transfers Agency
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <div id="home" class="hero">
-    <div class="hero-content">
-      <h1>Explore the Beauty of East Africa</h1>
-      <p>Experience breathtaking destinations and unforgettable tours with us.</p>
-      <a class="btn btn-lg" href="#destinations">Discover More</a>
-    </div>
-  </div>
-
-  <!-- Destinations Section -->
-  <div id="destinations" class="container my-5">
-    <h2 class="text-center mb-4" style="font-family: 'Patrick Hand', cursive;">Destinations</h2>
-    <div class="row">
-      <!-- Destination 1 -->
-      <div class="col-md-4">
-        <div class="card destination-item">
-          <img src="Diani Beach.jpg" class="card-img-top" alt="Diani Beach">
-          <div class="card-body">
-            <h5 class="card-title">Diani Beach</h5>
-            <p class="card-text">A stunning coastal paradise known for its white sand beaches and clear waters.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
+    <header>
+        <h1>Spring Beauty Collection</h1>
+    </header>
+    <main>
+        <div class="products">
+            <h2>Beauty Products</h2>
+            <div class="product-list">
+                <!-- 10 Beauty Products -->
+                <div class="product" data-price="20.00">
+                    <h3>Foundation</h3>
+                    <span class="price">$20.00</span>
+                    <div class="cart-actions">
+                        <button class="like-btn">❤</button>
+                        <button class="minus-btn">-</button>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="plus-btn">+</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <!-- Repeat similar block structure for each product (e.g., Lipstick, Cutex, etc.) -->
+                <!-- Add more products like: Blush, Mascara, Eyeliner, Highlighter, etc. -->
+            </div>
+            
+            <h2>Accessories</h2>
+            <div class="product-list">
+                <!-- 10 Accessories -->
+                <div class="product" data-price="15.00">
+                    <h3>Hairband</h3>
+                    <span class="price">$15.00</span>
+                    <div class="cart-actions">
+                        <button class="like-btn">❤</button>
+                        <button class="minus-btn">-</button>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <button class="plus-btn">+</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <!-- Repeat similar block structure for each accessory (e.g., Ring, Necklace, Hair Dye, etc.) -->
+                <!-- Add more accessories like: Earrings, Scarves, Bangles, etc. -->
+            </div>
         </div>
-      </div>
-      <!-- Destination 2 -->
-      <div class="col-md-4">
-        <div class="card destination-item">
-          <img src="Zanzibar .jpg" class="card-img-top" alt="Zanzibar">
-          <div class="card-body">
-            <h5 class="card-title">Zanzibar</h5>
-            <p class="card-text">The island of spice, offering rich history, culture, and beautiful beaches.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
+        <div class="cart-summary">
+            <h2>Total Price</h2>
+            <span id="total-price">$0.00</span>
         </div>
-      </div>
-      <!-- Destination 3 -->
-      <div class="col-md-4">
-        <div class="card destination-item">
-          <img src="Lamu Island.jpg" class="card-img-top" alt="Lamu">
-          <div class="card-body">
-            <h5 class="card-title">Lamu</h5>
-            <p class="card-text">A charming, historic town with narrow streets and beautiful Swahili architecture.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Destination 4 -->
-      <div class="col-md-4">
-        <div class="card destination-item">
-          <img src="Malindi Beaches.jpg" class="card-img-top" alt="Malindi">
-          <div class="card-body">
-            <h5 class="card-title">Malindi</h5>
-            <p class="card-text">A popular coastal town with stunning beaches and rich history.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Destination 5 -->
-      <div class="col-md-4">
-        <div class="card destination-item">
-          <img src="Mombasa City.jpg" class="card-img-top" alt="Mombasa">
-          <div class="card-body">
-            <h5 class="card-title">Mombasa</h5>
-            <p class="card-text">A vibrant city with a rich blend of cultures and beautiful coastal views.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Destination 6 -->
-      <div class="col-md-4">
-        <div class="card destination-item">
-          <img src="Pemba Islands.jpg" class="card-img-top" alt="Pemba Island">
-          <div class="card-body">
-            <h5 class="card-title">Pemba Island</h5>
-            <p class="card-text">An untouched paradise offering secluded beaches and crystal-clear waters.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tours Section -->
-  <div id="tours" class="container my-5">
-    <h2 class="text-center mb-4" style="font-family: 'Patrick Hand', cursive;">Tours and Packages</h2>
-    <div class="accordion" id="toursAccordion">
-      <!-- Tour 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Coastal Getaway Package
-          </button>
-        </h2>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#toursAccordion">
-          <div class="accordion-body">
-            Enjoy a 7-day tour along the Kenyan coast with accommodations and full-board meals included. Discount: 10% off for early bookings!
-            <a href="#" class="btn btn-link">View Details</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tour 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Safari and Beach Combo
-          </button>
-        </h2>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#toursAccordion">
-          <div class="accordion-body">
-            Combine an exciting safari experience with a relaxing beach vacation. Payment plans available!
-            <a href="#" class="btn btn-link">View Details</a>
-          </div>
-        </div>
-      </div>
-       <!-- Tour 3 -->
-       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Cruise Ship and Beach Combo
-          </button>
-        </h2>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#toursAccordion">
-          <div class="accordion-body">
-            Combine an exciting Cruise Ship experience with a relaxing beach vacation. Payment plans available!
-            <a href="#" class="btn btn-link">View Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div id="contact" class="container my-5">
-    <h2 class="text-center mb-4" style="font-family: 'Patrick Hand', cursive;">Contact Us</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Your Email">
-          </div>
-          <div class="form-group">
-            <label for="destination">Destination of Interest</label>
-            <input type="text" class="form-control" id="destination" placeholder="E.g., Diani Beach">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <!-- Google Map Embed -->
-        <div class="map" id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.946279374306!2d36.80384994563007!3d-1.2741108607911987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1722bf58267d%3A0x897d60b7f5cb9c!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1630570442927!5m2!1sen!2ske" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center">
-    <p>&copy; 2024 Mucuri Tours and Transfers Agency. All Rights Reserved.</p>
-    <p>Mucuri Designs</p>
-    <div class="social-media">
-      <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
-    </div>
-  </footer>
-
-  <!-- Bootstrap and JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>

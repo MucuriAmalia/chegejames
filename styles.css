@@ -1,69 +1,64 @@
-
-/* Font Styling */
-.font-patrick {
-    font-family: 'Patrick Hand', cursive;
-}
-h2, h3 {
-    font-family: 'Patrick Hand', cursive;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-header, footer {
-    background-color: #43235b; /* Dark background */
+header {
+    background-color: rgb(182, 11, 91);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
 
-/* Button Hover Effect */
-a:hover {
-    background-color: #2d3748; /* Dark hover effect */
-    color: #FFD700;
+.products {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
 }
 
-/* Hero Section */
-#home {
-    background-image: url('Mucuri Heros background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 
-/* Product Cards */
-.card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+.cart-actions {
+    display: flex;
+    align-items: center;
 }
 
-/* Footer Social Media Icons */
-footer a {
-    color: white;
-    transition: color 0.3s ease;
+button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-footer a .fab.fa-facebook {
-    color: #1fe40d; 
+.like-btn {
+    color: #ccc;
+    background: none;
+    border: none;
+    font-size: 20px;
 }
 
-footer a .fab.fa-twitter {
-    color: #1fe40d; /* Twitter Blue */
+.like-btn.liked {
+    color: red;
 }
 
-footer a .fab.fa-instagram {
-    color: #1fe40d; /* Instagram Gradient Color */
+.cart-summary {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 2px solid #ff6f61;
 }
 
-/* Footer Text Styles */
-footer p {
-    margin: 0.5rem 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #home h2 {
-        font-size: 3rem;
-    }
-    #home p {
-        font-size: 1.2rem;
-    }
-    #home a {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-    }
+#total-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
