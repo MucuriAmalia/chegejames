@@ -3,56 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spring Beauty</title>
+    <title>Color Changer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Spring Beauty Collection</h1>
-    </header>
-    <main>
-        <div class="products">
-            <h2>Beauty Products</h2>
-            <div class="product-list">
-                <!-- 10 Beauty Products -->
-                <div class="product" data-price="20.00">
-                    <h3>Foundation</h3>
-                    <span class="price">$20.00</span>
-                    <div class="cart-actions">
-                        <button class="like-btn">❤</button>
-                        <button class="minus-btn">-</button>
-                        <input type="number" class="quantity" value="1" min="1">
-                        <button class="plus-btn">+</button>
-                        <button class="delete-btn">Delete</button>
-                    </div>
-                </div>
-                <!-- Repeat similar block structure for each product (e.g., Lipstick, Cutex, etc.) -->
-                <!-- Add more products like: Blush, Mascara, Eyeliner, Highlighter, etc. -->
-            </div>
-            
-            <h2>Accessories</h2>
-            <div class="product-list">
-                <!-- 10 Accessories -->
-                <div class="product" data-price="15.00">
-                    <h3>Hairband</h3>
-                    <span class="price">$15.00</span>
-                    <div class="cart-actions">
-                        <button class="like-btn">❤</button>
-                        <button class="minus-btn">-</button>
-                        <input type="number" class="quantity" value="1" min="1">
-                        <button class="plus-btn">+</button>
-                        <button class="delete-btn">Delete</button>
-                    </div>
-                </div>
-                <!-- Repeat similar block structure for each accessory (e.g., Ring, Necklace, Hair Dye, etc.) -->
-                <!-- Add more accessories like: Earrings, Scarves, Bangles, etc. -->
-            </div>
-        </div>
-        <div class="cart-summary">
-            <h2>Total Price</h2>
-            <span id="total-price">$0.00</span>
-        </div>
-    </main>
-    <script src="main.js"></script>
+    <div class="container">
+        <h1>Color Changer</h1>
+        <div id="color-box"></div>
+        <button id="change-color-btn">Change Color</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

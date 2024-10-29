@@ -1,64 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
+/* Center content and add spacing */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: rgb(182, 11, 91);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-.products {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 10px;
-}
-
-.product {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    background-color: #fff;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
-.cart-actions {
-    display: flex;
-    align-items: center;
-}
-
-button {
-    padding: 5px 10px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.like-btn {
-    color: #ccc;
-    background: none;
-    border: none;
-    font-size: 20px;
-}
-
-.like-btn.liked {
-    color: red;
-}
-
-.cart-summary {
+.container {
     text-align: center;
-    padding: 10px;
-    background-color: #fff;
-    border-top: 2px solid #ff6f61;
+    margin-top: 20px;
 }
 
-#total-price {
-    font-size: 24px;
-    font-weight: bold;
+h1 {
     color: #333;
+}
+
+/* Style for color box */
+#color-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db; /* Default color */
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+/* Style for button */
+#change-color-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#change-color-btn:hover {
+    background-color: #2980b9;
 }
